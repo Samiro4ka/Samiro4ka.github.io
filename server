@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+<script>
+fetch("/hello")
+    .then(response => {
+        console.log(response.status);       // 200
+        console.log(response.statusText);   // OK
+        console.log(response.url);          // http://localhost:3000/hello
+    });
+</script>
+</body>
+</html>
